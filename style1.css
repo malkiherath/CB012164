@@ -1,0 +1,374 @@
+*{
+    margin: 0%;
+    padding: 0% 0px 0 0px;
+
+    box-sizing: border-box;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Playfair:wght@300&display=swap');
+/*responsive*/
+
+@media only screen  (min-width: 300px)and (max-width: 1000px){
+    
+    [class*="col-"] {
+      width: 100%;
+    }
+}  
+/*header and footer*/
+.nav{
+
+    display:flex;
+    justify-content:left;
+    align-items: center;
+    line-height: 80px;
+   background-color: rgb(13, 13, 13);
+   
+}
+
+header .nav ul  img {
+
+border-radius: 8px;
+margin-top: 10px;
+margin-left: 10px;
+}
+
+.nav ul li{
+  display:contents;
+  font-size:medium;
+  padding-left: 20px;
+ 
+}
+header .nav nav ul  li a{
+    text-decoration-style:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  margin-left: 0px;
+ }
+ header .nav nav ul  li a:hover{
+   
+   color: rgb(72, 255, 0);
+   transition-duration: 0.18s;
+   padding-left: 3px;
+   font-size:17px;
+ }
+ footer{
+    background-color: rgb(0, 0, 0);
+    padding: 30px 0 0 0;
+}
+.contain .row .footer_col a img{
+border-radius: 8px;
+margin-left: 10px;
+}
+.contain{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style:none;
+}
+.footer_col h3{
+    font-size: larger;
+    color: beige;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    margin-left: 30px;
+}
+.footer_col h3::before {
+content: '';
+position: absolute;
+left: 0;
+bottom: -10px;
+background-color: rgb(128, 255, 2);
+height: 2px;
+box-sizing: border-box;
+width:60px;
+}
+
+
+.footer_col ul li :not(:last-child){
+    margin-bottom: 10px;
+}
+.footer_col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+.footer_col ul li a:hover{
+color:  rgb(128, 255, 2);
+padding-left: 10px;
+}
+.footer_col .social a{
+display:flow-root;
+height: 40px;
+width: 40px;
+background-color: rgba(130, 128, 128, 0.2);
+margin: 0 10PX 10PX 30PX;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all0.5 ease;
+}
+.footer_col .social a:hover{
+    color: chartreuse;
+    background-color: rgb(0, 0, 0);
+}
+footer p{
+    color: #ffffff;
+}
+/*home page*/
+
+body{ 
+    background-color: rgba(0, 0, 0, 0.811);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+}
+
+h1{
+    color: rgb(21, 255, 0);
+    padding-left: 30px;
+
+}
+h2{
+    color: rgb(0, 208, 255);
+    text-align: center;
+    display:inline-block;
+    
+}
+h3{
+    color: aquamarine;
+}
+h1 , h2,h3, em li{
+    text-transform: capitalize;
+}
+
+/*home page*/
+
+.main_img  {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/beach4.jpg);
+
+    background-size: cover;
+    height:80vh;
+    
+}
+.main_img h1{
+    padding-top: 10vh;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main_img_overflow{
+    margin: 0 5% 50% auto;
+    padding-right: 50%;
+}
+.main_img_overflow .bg{
+    color: rgb(246, 246, 246);
+    
+    text-align:justify;
+    padding-left:10% ;
+    padding-right:10%;
+ }
+.content_1{
+    background-color: rgb(71, 70, 70);
+    border: 60px solid rgb(71, 70, 70);
+    border-radius: 50px;
+ }
+
+ section{
+    margin-left: 5%;
+    margin-right: 7%;
+    padding-bottom: 10px;
+
+}
+section .p1 h2,section h2{
+   margin: 40px 0 10px;
+
+}
+.img1{
+    display:flex ;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+ }
+.img1 img{
+    height: 250px;
+    width: 250px;
+    padding-left: 10px;
+}
+.img_desc p{
+        margin-bottom: 100px;
+}
+p{
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+.img_desc p{
+    text-align: center;
+    color: cyan;
+}
+    
+
+
+div.container {
+    text-align:left;
+    padding-left: 200px;
+  }
+  
+ul.myUL ,section .content_1 ol.myUL{
+    display: inline-block;
+    text-align: left;
+    color: rgb(157, 255, 0);
+padding-left: 30px;  }
+
+section .content_1,section  h2 {
+    margin-left: 4%;
+  }
+/*categories page*/
+.cat_content{
+   padding-top: 30px;
+   margin-bottom: 30px;
+   margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+    padding-bottom: 20px;
+    border: 1px solid;
+    border-radius: 30px;
+}
+.cat_content #green h2,.cat_content #hawksbill h2,.cat_content #OliveRidleyturtle h2,.cat_content #Leatherbackturtle h2,.cat_content #Loggerhead_Sea_Turtle h2,.cat_content #green h2{
+    color: rgb(187, 255, 0);
+   padding-left: 0;
+    padding-top: 8px;
+    font-size: 40px;
+}
+.cat_content h3{
+    color: rgb(0, 157, 255);
+    padding-bottom: 30px;
+    padding-left: 100px;
+    font-family:'Teko', sans-serif;
+    font-size: 15px;
+}
+.cat_content h4,table tr{
+    color: rgb(4, 138, 24);
+}
+.cat_content .p_text h4{
+    padding-left: 30px;
+}
+.cat_content .p_text ul li {
+    color: #ffffff;
+    padding-left: 50px;
+}
+
+.cat_content img{
+    max-width: 500px;
+    min-width: 300px;
+
+    float: left;
+    border: 3px solid;
+    margin-right: 10px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    }
+#cat_img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+}
+section .cat_content .p_text p{
+    font-family:'Trebuchet MS';
+   padding-left: 10px;
+   color: rgba(169, 169, 169, 0.875);
+
+}
+.cat_list{
+    position: relative;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right:  10%;
+
+}
+.cat_list .box{
+    max-width: 350px;
+    min-width: 300px;
+    max-height: 250px;
+    overflow: hidden;
+    transition: 0.4s;
+    padding-left: 10px;
+    text-align: center;
+    
+}
+
+.cat_list .box .cat_trans .cat_trans_text h2{
+    color: greenyellow;
+    transition: 0.5s;
+        
+}
+.cat_list .box .cat_trans:hover .cat_trans_text h2{
+    transform: translateY(-150px);
+    background-color: #47474788;
+}
+
+/*styling the table in turtle category page*/
+
+table{
+    margin-left: 10%;
+    margin-right:  10%;
+    border:15px solid rgb(0, 0, 0);
+   
+}
+table th{  
+    background-color: rgb(37, 37, 37);
+    height: 50px;
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table th , table td,table caption{
+    text-transform:capitalize;
+}
+table tr td img{
+    width: 350px;
+    height: 240px;
+}
+
+table #green{
+    background-color: darkslategray;
+    color: #ffffff;
+}
+table #hawksbill{
+    background-color: rgb(120, 158, 152);
+    color:rgb(4, 43, 43) ;
+}
+table #OliveRidleyturtle{
+    background-color: darkslategray;
+    color: #ffffff;
+
+}
+table #Leatherback{
+    background-color: rgb(120, 158, 152);
+    color:rgb(4, 43, 43) ;
+}
+table #Loggerhead{
+    background-color: darkslategray;
+    color: #ffffff;
+
+}
+
+
+
+

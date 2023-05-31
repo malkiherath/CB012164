@@ -1,0 +1,271 @@
+*{
+    margin: 0%;
+    padding: 0% 0px 0 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    
+}
+/*responsive*/
+
+@media only screen  (min-width: 300px)and (max-width: 1000px){
+
+    [class*="col-"] {
+      width: 100%;
+    }
+} 
+/*header and footer*/
+.nav{
+
+    display:flex;
+    justify-content:left;
+    align-items: center;
+    line-height: 80px;
+   background-color: rgb(13, 13, 13);
+   
+}
+
+header .nav ul  img {
+
+border-radius: 8px;
+margin-top: 10px;
+margin-left: 10px;
+}
+
+.nav ul li{
+  display:contents;
+  font-size:medium;
+  padding-left: 20px;
+ 
+}
+header .nav nav ul  li a{
+    text-decoration-style:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  margin-left: 0px;
+ }
+ header .nav nav ul  li a:hover{
+   
+   color: rgb(72, 255, 0);
+   transition-duration: 0.18s;
+   padding-left: 3px;
+   font-size:17px;
+ }
+ footer{
+    background-color: rgb(0, 0, 0);
+    padding: 30px 0 0 0;
+}
+.contain .row .footer_col a img{
+border-radius: 8px;
+margin-left: 10px;
+}
+.contain{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul{
+    list-style:none;
+}
+.footer_col h3{
+    font-size: larger;
+    color: beige;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    margin-left: 30px;
+}
+.footer_col h3::before {
+content: '';
+position: absolute;
+left: 0;
+bottom: -10px;
+background-color: rgb(128, 255, 2);
+height: 2px;
+box-sizing: border-box;
+width:60px;
+}
+
+
+.footer_col ul li :not(:last-child){
+    margin-bottom: 10px;
+}
+.footer_col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+.footer_col ul li a:hover{
+color:  rgb(128, 255, 2);
+padding-left: 10px;
+}
+.footer_col .social a{
+display:flow-root;
+height: 40px;
+width: 40px;
+background-color: rgba(255, 255, 255, 0.2);
+margin: 0 10PX 10PX 30PX;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #ffffff;
+transition: all0.5 ease;
+}
+.footer_col .social a:hover{
+    color: chartreuse;
+    background-color: rgb(0, 0, 0);
+}
+footer p{
+    color: #ffffff;
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(7, 13, 36, 0.7),rgba(1, 4, 16, 0.792)), url(./img/gogogo.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row button{
+    margin-left: 60%;
+    }
+
+.bg .row .col button{
+    height: 70px;
+    width: 200px;
+    border: 3px solid green;
+    border-radius: 10px;
+    animation-name: x;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes x{
+    0%   {background-color:rgb(250, 250, 250)}
+    50%  {background-color:rgb(0, 0, 0)}
+}
+button h1{
+    text-transform: capitalize;
+    animation-name: y;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes y{
+    0%   {color: black;}
+    50%  {color: white;}
+}
+.row button:hover {
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    
+}
+button h1:hover{
+    letter-spacing: 0.25rem;
+}
+
+
+.container{
+    border: 3px solid black;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(143, 152, 189, 0.256),rgba(2, 6, 21, 0.7));
+    margin-left: 60%;
+    padding: 100px 0 50px 50px;
+}
+.container .row{
+    display:inline-flex;
+
+}
+.i4 button,.i5 button,.i6 button,.i7 button ,.i8 textarea {
+    width: 100px;
+    height: 50px;
+    margin: 40px  20px;
+    cursor: pointer;
+
+}
+.i4 button,.i5 button,.i6 button,.i7 button ,.i8 textarea{
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    background-color: rgba(4, 4, 34, 0.338);
+}
+.i3 select{
+    margin-left: 150px;
+    height: 28px;
+    width: 100px;
+}
+form label{
+color: aliceblue;}
+#text{
+padding: 2px;
+width: 240px;
+}
+.i8 textarea{
+    font-size: 1rem;
+}
+.i9{
+    width: 500px;
+font-size: 2rem;
+color: aliceblue;
+}
+.i10 button,.i11 button{
+    margin: 40px  20px;
+width: 170px;
+height: 40px;
+background-color: #97dcc647;
+
+}
+
+
+/*purchase content*/
+.pur h1{
+    animation-name: z;
+    animation-duration: 3s;
+animation-iteration-count: infinite;
+    position: relative;
+    margin-left: 50px;
+    animation-delay: 0ms;
+    font-size: 3rem;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    color: rgb(4, 4, 51);
+    
+}
+@keyframes z {
+    0%   { left:10%; top:0px;color: rgb(57, 57, 204);}
+    25%  { left:30%; top:0px;color: rgb(92, 12, 12);}
+    50%  { left:10%; top:0px;color: #93f10f;}
+    75%  { left:0%; top:0px;color: rgb(10, 3, 56);}
+  }
+
+.pur_a{
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+.pur_row .a{
+    height: 250px;
+    width: 400px;
+    
+    align-items: center;
+    padding: 20px;
+    perspective: 100px;
+  }
+  .pur_a img{
+    width: 400px;
+    height: 250px;
+    padding-left: 100px;
+  }
+.pur_row h2{
+    margin: 10px;
+    padding-left: 50px;
+    color: rgb(5, 5, 85);
+}
